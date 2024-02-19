@@ -1,0 +1,42 @@
+{
+  "action_manifest_version" : 0,
+  "bindings": {
+    "/actions/main": {
+      "sources" : [
+        {
+          "inputs" : {
+            "click" : {
+              "output" : "/actions/main/in/OpenInventory"
+            }
+          },
+          "mode" : "button",
+          "path" : "/user/hand/left/input/x"
+        },
+        {
+          "inputs" : {
+            "click" : {
+              "output" : "/actions/main/in/test2"
+            }
+          },
+          "mode" : "button",
+          "path" : "/user/hand/left/input/y"
+        },
+        {
+          "inputs" : {
+            "position" : {
+              "output" : "/actions/main/in/scroll"
+            }
+          },
+          "mode" : "joystick",
+          "path" : "/user/hand/left/input/joystick"
+        }
+      ]
+    }
+  },
+  "category" : "steamvr_input",
+  "controller_type" : "oculus_touch",
+  "description" : "Bindings for the OpenVR SDK \"hellovr_opengl\" demo for a oculusTouch controller",
+  "name" : "HelloVR bindings for a oculusTouch controller",
+  "options" : {},
+  "simulated_actions" : []
+}
